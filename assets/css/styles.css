@@ -1,8 +1,67 @@
-body {
-    background-color: aqua;
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+li {
+    list-style: none;
+}
+a {
+    color: var(--cor2);
+    text-decoration: none;
 }
 
-h1 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: red;
+/* Variáveis de CSS */
+:root {
+    --cor1: #000;
+    --cor2: #fff;
+    --cor3: #004e92;
+}
+
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Body */
+body {
+    background-color: var(--cor1);
+}
+
+/* HTML */
+html {
+    height: 100vh;
+}
+
+/* Header */
+.logo > a {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+#cabecalho {
+    background: transparent;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border:  1px solid red;
+}
+#cabecalho > .menu ul {
+    display: flex;
+    align-items: center;
+}
+#cabecalho > .menu ul li{
+    margin: 0 12px;
+    border-radius: 7px;
+    padding: 5px;
+    transition: all 400ms ease-in-out;
+    cursor: pointer;
+} 
+#cabecalho > .menu ul li:hover {
+    background-color: var(--cor3);
+}
+#cabecalho > .menu ul li a{
+    font-weight: bold;
+    font-size: 1.3em;
 }
