@@ -40,12 +40,11 @@ html {
 }
 
 #cabecalho {
-    background: transparent;
+    background: var(--cor3);
     padding: 20px 30px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border:  1px solid red;
 }
 #cabecalho > .menu ul {
     display: flex;
@@ -59,9 +58,12 @@ html {
     cursor: pointer;
 } 
 #cabecalho > .menu ul li:hover {
-    background-color: var(--cor3);
+    background-color: var(--cor2);
 }
 #cabecalho > .menu ul li a{
     font-weight: bold;
     font-size: 1.3em;
+}
+#cabecalho > .menu ul li a:hover {
+    color: var(--cor3);
 }
